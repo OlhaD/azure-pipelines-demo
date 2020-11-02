@@ -9,3 +9,4 @@ Azure Pipelines Demo/obj/Azure Pipelines Demo.csproj.nuget.dgspec.json
 Azure Pipelines Demo/obj/
 .vs/Azure Pipelines Demo/v16/
 *.orig
+.vs/
