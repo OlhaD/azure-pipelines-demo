@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- azure-pipeline-setup
 
 pool:
   vmImage: 'windows-2019'
@@ -21,8 +21,10 @@ steps:
     includePreviewVersions: true # Required for preview versions
 
 - task: DotNetCoreCLI@2
+  displayName: Restore
   inputs:
     command: 'restore'
+    projects: 'azure-pipelines-demo/Azure Pipelines Demo/Azure Pipelines Demo.csproj'
     feedsToUse: 'select'
     vstsFeed: 'my-vsts-feed' # A series of numbers and letters
 
