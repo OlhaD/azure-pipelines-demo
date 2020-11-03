@@ -24,7 +24,7 @@ steps:
   displayName: Restore
   inputs:
     command: 'restore'
-    projects: 'azure-pipelines-demo/Azure Pipelines Demo/Azure Pipelines Demo.csproj'
+    projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
   inputs:
